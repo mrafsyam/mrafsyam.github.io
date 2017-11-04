@@ -1,5 +1,3 @@
-### Some free Udemy courses
-
 * [Python for Beginners](https://www.udemy.com/ardit-sulce-python-for-beginners/)
 
 * [The Four Pillars of OOP in Python 3](https://www.udemy.com/python-oops-beginners/)
