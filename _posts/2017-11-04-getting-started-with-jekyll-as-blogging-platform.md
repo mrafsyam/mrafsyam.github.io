@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Jekyll as new blogging platform
+title: Getting started with Jekyll as the new blogging platform
 ---
 
 I've been using [**Blogger**](http://nextslides.blogspot.my/) for my blogging purposes for quite some time. However, since I found out that I can host my site with Github Pages, I thought about moving to here for good.
@@ -21,6 +21,7 @@ Lets get started!
 
 #### Things to do :
 * Complete the Jekyll site setup (I know some links are 404 at the moment)
+* Fixed individual page styles (For some reason, only the homepage is OK)
 * Find out how I can display some posts from other blogs somewhere on the homepage (not so static anymore, eh?). Well, if that's not possible, I just put up links to them somewhere on the homepage. Kinda for bookmarking purposes.
 * Redirect my domain to here
 * Move all post from blogger to here. Found some [utility](https://gist.github.com/kennym/1115810)
