@@ -33,7 +33,7 @@ unzip linuxx64_12201_database.zip database
 ```
 (a)
 127.0.0.1       localhost localhost.localdomain localhost4 localhost4.localdomain4
-192.168.56.141  fedora26.localdomain  fedora26 ```
+192.168.56.141  fedora26.localdomain  fedora26
 
 (b)
 127.0.0.1   localhost 
@@ -266,8 +266,8 @@ You should see something like this :
 
 ``` 
 sqlplus / as sysdba
-    SQL> shutdown
-    SQL> startup 
+SQL> shutdown
+SQL> startup 
 ```
 
 Afterwards, check if the listener is picking up the instance by `lsnrctl status`
