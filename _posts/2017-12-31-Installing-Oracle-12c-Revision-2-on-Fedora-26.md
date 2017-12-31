@@ -5,25 +5,30 @@ This writing is based on this [article](https://oracle-base.com/articles/12c/ora
 
 2. Create appropiate Linux groups and users. Set the password for Linux user oracle.
 
-    groupadd -g 54321 oinstall
-    groupadd -g 54322 dba
-    groupadd -g 54323 oper
-    sudo useradd -u 54321 -g oinstall -G dba,oper oracle
-    passwd oracle
+```
+groupadd -g 54321 oinstall
+groupadd -g 54322 dba
+groupadd -g 54323 oper
+sudo useradd -u 54321 -g oinstall -G dba,oper oracle
+passwd oracle
+```
 
 3. Create the appropiate directories for Oracle. Note that the installation can be anywhere, but for simplicity sake, lets just use Oracle typical directory structure.
 
-    mkdir -p /u01/app/oracle/product/12.2.0.1/db_1
-    mkdir -p /u01/software
-    sudo chown -R oracle:oinstall /u01
-    sudo chmod -R 775 /u01
+```
+mkdir -p /u01/app/oracle/product/12.2.0.1/db_1
+mkdir -p /u01/software
+sudo chown -R oracle:oinstall /u01
+sudo chmod -R 775 /u01
+```
 
 4. Unzip the installation files from (1) to folder "/u01/software/database". This will be our installer folder.
     
-    unzip linuxx64_12201_database.zip database
+`unzip linuxx64_12201_database.zip database`
 
 5. Setup the host file. Edit the "/etc/hosts" file to add a fully qualified name to our machine. Note that keep everything in one line. For example, (a) below doesn't work for me, but (b) does. Ensure the file is saved correctly by running `hostname`
 
+```
     (a)
     127.0.0.1       localhost localhost.localdomain localhost4 localhost4.localdomain4
     192.168.56.141  fedora26.localdomain  fedora26 ```
@@ -32,10 +37,12 @@ This writing is based on this [article](https://oracle-base.com/articles/12c/ora
     127.0.0.1   localhost 
     127.0.0.1   localhost.localdomain 
     127.0.0.1   fedora26.localdomain
+```
 
 6. Set the kernel parameters. Add the following lines to the "/etc/sysctl.conf" file.
 
-``` fs.file-max = 6815744
+``` 
+fs.file-max = 6815744
     kernel.sem = 250 32000 100 128
     kernel.shmmni = 4096
     kernel.shmall = 1073741824
@@ -48,7 +55,8 @@ This writing is based on this [article](https://oracle-base.com/articles/12c/ora
     net.ipv4.conf.all.rp_filter = 2
     net.ipv4.conf.default.rp_filter = 2
     fs.aio-max-nr = 1048576
-    net.ipv4.ip_local_port_range = 9000 65500 ```
+    net.ipv4.ip_local_port_range = 9000 65500 
+```
 
 Run this to apply the changes `/sbin/sysctl -p`
 
