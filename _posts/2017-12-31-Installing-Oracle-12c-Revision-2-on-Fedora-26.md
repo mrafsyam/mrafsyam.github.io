@@ -197,7 +197,8 @@ startup
 
 You should see something like this :
 	
-``` ORACLE instance started.
+``` 
+ORACLE instance started.
 	Total System Global Area 2483027968 bytes
 	Fixed Size		    8795808 bytes
 	Variable Size		  687868256 bytes
