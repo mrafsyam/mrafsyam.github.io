@@ -1,5 +1,4 @@
-This writing is based on this [article]:(https://oracle-base.com/articles/12c/oracle-db-12cr2-installation-on-fedora-26) which I followed.
-However, the steps mentioned were somewhat not in order and some issues tackled were not described properly (at least to me).
+This writing is based on this [article]:(https://oracle-base.com/articles/12c/oracle-db-12cr2-installation-on-fedora-26) which I followed. However, the steps mentioned were somewhat not in order and some issues tackled were not described properly (at least to me). Please also note that these steps are very specific to Fedora 26. I don't guaranteed that it will work on other distro or other Fedora or Oracle version.
 
 1. First of all, download the installation files
 [OTN: Oracle Database 12c Release 2 (12.2.0.1) Software (64-bit).](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html)
