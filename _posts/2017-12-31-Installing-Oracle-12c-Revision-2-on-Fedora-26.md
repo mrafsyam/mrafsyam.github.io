@@ -199,13 +199,14 @@ You should see something like this :
 	
 ``` 
 ORACLE instance started.
-	Total System Global Area 2483027968 bytes
-	Fixed Size		    8795808 bytes
-	Variable Size		  687868256 bytes
-	Database Buffers	 1778384896 bytes
-	Redo Buffers		    7979008 bytes
-	Database mounted.
-	Database opened. 
+
+Total System Global Area 2483027968 bytes
+Fixed Size		    8795808 bytes
+Variable Size		  687868256 bytes
+Database Buffers	 1778384896 bytes
+Redo Buffers		    7979008 bytes
+Database mounted.
+Database opened. 
 ```
 
 20- To ensure that the listener is running, run :
@@ -263,7 +264,7 @@ You should see something like this :
 	The command completed successfully 
 ```
 
-21. I had some issues where the listener just couldn't reach out the running database instance. To rectify this, shutdown the instance and restart it back using sqlplus
+21- I had some issues where the listener just couldn't reach out the running database instance. To rectify this, shutdown the instance and restart it back using sqlplus
 
 ``` 
 sqlplus / as sysdba
@@ -273,4 +274,4 @@ SQL> startup
 
 Afterwards, check if the listener is picking up the instance by `lsnrctl status`
 
-22. That's it. You may want to create some tablespace, some new users to try out your local Oracle database using any database client. I use Dbeaver. Good luck!!
+22- That's it. You may want to create some tablespace, some new users to try out your local Oracle database using any database client. I use Dbeaver. Good luck!!
