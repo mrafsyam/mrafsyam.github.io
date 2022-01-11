@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            Raf blog
 tagline:          'Noob Software Engineer trying to pick up some slacks'
-description:      'Here I write as often as possible about various topics, usually around Software Engineering. Writing hopefully helps me to think and solve problems better, as I put thoughts into words. Hopefully, it will also help me to communicate more effectively to my team and my future self.\n\nGood written communication is one of the most important skills for any Software Engineer to master.'
+description:      'Here I write as often as possible about various topics, usually around Software Engineering. Writing hopefully helps me to think and solve problems better, as I put thoughts into words. Hopefully, it will also help me to communicate more effectively to my team and to my future self. Good written communication is one of the most important skills for any Software Engineer to master.'
 url:              http://mrafsyam.github.io
 baseurl:          /
 
