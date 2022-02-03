@@ -1,0 +1,10 @@
+---           
+layout: post
+title: UI design (again!)
+date: 2014-09-05 11:21:48 UTC
+updated: 2014-09-05 11:21:48 UTC
+comments: false
+categories: 
+---
+
+<div class="separator" style="clear: both; text-align: center;"></div><div style="text-align: left;"><div class="separator" style="clear: both; text-align: center;"></div><div style="text-align: justify;"><span style="text-align: left;">Since we have passed the first demonstration, it's time now to design for the final prototype. I have considered a few ideas of how our App will look like, and what kind of functionality that we will be offering. Unline UniKey, we don't have our system connected to the net, which makes our system simpler than theirs (apart from more secured, that's it). These are the interfaces that I came out with, as of now.</span><br /><div style="text-align: left;"><span style="text-align: left;"><br /><a href="http://3.bp.blogspot.com/-gfhfJkwZuF0/Uimd-sBWPdI/AAAAAAAAAvI/1Kw2-svSiOU/s1600/main.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" src="http://3.bp.blogspot.com/-gfhfJkwZuF0/Uimd-sBWPdI/AAAAAAAAAvI/1Kw2-svSiOU/s1600/main.png" /></a></span></div></div>&nbsp;&nbsp;<a href="http://1.bp.blogspot.com/-PHLWpLOtqyA/Uimd-pUKgAI/AAAAAAAAAvM/58TN2hsEa1k/s1600/keysharing.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-PHLWpLOtqyA/Uimd-pUKgAI/AAAAAAAAAvM/58TN2hsEa1k/s1600/keysharing.png" /></a><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-M76Qk-5J4mg/Uimd-hcgOdI/AAAAAAAAAvU/U6vPhbP9MDQ/s1600/mykeys.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-M76Qk-5J4mg/Uimd-hcgOdI/AAAAAAAAAvU/U6vPhbP9MDQ/s1600/mykeys.png" /></a></div><div style="text-align: left;"><br /></div><div style="text-align: left;">What do you think?</div><br /><br /></div>

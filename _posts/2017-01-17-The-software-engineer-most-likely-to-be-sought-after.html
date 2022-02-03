@@ -1,0 +1,10 @@
+---           
+layout: post
+title: The software engineer most likely to be sought after
+date: 2017-01-17 17:23:38 UTC
+updated: 2017-01-17 17:23:38 UTC
+comments: false
+categories: 
+---
+
+The software engineer most likely to be sought after is ;<br /><br /><br /><ul><li>Utterly reliable. They get things done, even if it means working hard. They notify ahead of time if they're going to miss a deliverable.<br /></li><li>Thorough. Things they do only need to be done once, which is to say, it's unlikely anyone else could have done it better.<br /></li><li>Productive. They get things done quickly and competently.<br /></li><li>Innovative. They can think of new ways to solve problems old and new.<br /></li><li>Adaptable. They learn new technologies easily, and can integrate it with their existing knowledge to leverage both for gain. Also known as 'fungible.'<br /></li><li>Optimistic. When things are looking crappy, they're the ones who convince everyone that this too will pass, and probably in a good way.<br /></li><li>Personable. People like working with them. Despite being good, they don't make other people feel bad.</li></ul><br />It's not about your primary programming language or technology. It's not about being smarter than everyone else. It's not about being the world's best programmer. It's about being good, being reliable, and being someone who other people want to work with.<br /><br />Managers want reliable people in bad times, and people who don't cause trouble. Peers want someone who buoys them and makes the team stronger, and helps their team mates and the company succeed.<br /><br />If by some miracle a position is open, hiring managers want to hire people like this because they're good for business, they're good for team morale, and they're good for the company. And they find them by remembering who THEY like working with, or asking their team for recommendations of people they like working with

@@ -1,0 +1,10 @@
+---           
+layout: post
+title: [Android] Fast ADB installer
+date: 2016-02-22 06:45:06 UTC
+updated: 2016-02-22 06:45:06 UTC
+comments: false
+categories: 
+---
+
+<div class="separator" style="clear: both; text-align: left;"><a href="https://2.bp.blogspot.com/-DBSsq5Z5A1g/Vsqt9LzjCcI/AAAAAAAABT8/b0wHBuVdWjI/s1600/how-to-install-adb-driver.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="213" src="https://2.bp.blogspot.com/-DBSsq5Z5A1g/Vsqt9LzjCcI/AAAAAAAABT8/b0wHBuVdWjI/s400/how-to-install-adb-driver.png" width="400" /></a></div><div class="separator" style="clear: both; text-align: left;"><br /></div>If you need just the adb tool for debugging your mobile app, but you don't need the whole big size SDK, use this tool : Download&nbsp;<b><a href="https://drive.google.com/file/d/0B95Qjfn3s5vkaEdGMUZxLTlrT2c/view?usp=sharing">15 seconds ADB Installer v1.3</a></b><br /><b><br /></b><b>Features:</b><br />Small - 9.18 MB<br />Fast - 15 seconds install<br />Include - ADB, Fastboot and also Drivers<br />Easy to install - just run it and program will guide you<br />Clean - ADB and Google Drivers from latest SDK<br /><br /><b>Install process:</b><br />1. Run it with administrator privileges<br />2. Press Y/Yes to install ADB and Fastboot or N/No to skip<br />3. Press Y/Yes to install ADB system-wide or N/No for current user only<br />4. Press Y/Yes to install Drivers or N/No to skip<br />5. Continue Driver installation<br />6. 15 seconds passed - finished!<br /><br /><b>Notes:</b><br />System-wide: ADB and Fastboot are installed to %SystemDrive%\adb directory, and added system-wide path.<br />Current user only: ADB and Fastboot are installed to %UserProfile%\adb directory, and added path for current user.<br />CMD can use ADB and Fastboot from any directory.<br />Drivers are installed to system - no need to install them from directories.<br />Installer automaticly decides if install 32-bit or 64-bit drivers.<br />If you have problem with driver enumeration in Windows 8.1 install update KB2917929
