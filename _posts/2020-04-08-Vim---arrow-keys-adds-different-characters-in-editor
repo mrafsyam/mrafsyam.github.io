@@ -14,7 +14,6 @@ However, VIM is the successor to Vi. By default, it set to be in Vi-compatible m
 To remove the compatible mode, create a file named .vimrc in home directory add this line to the top of the file:
 <pre>
 vim  ~/.vimrc
-
 set nocompatible
 </pre>
 
