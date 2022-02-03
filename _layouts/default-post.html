@@ -28,33 +28,14 @@
 </head>
 
 <body>
-   
-<!-- Sidebar -->
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-      <a href="">
-        Raf blog
-      </a>
-      </h1>
-      <p>Here I write as often as possible about various topics, usually around Software Engineering. Writing hopefully helps me to think and solve problems better, as I put thoughts into words. Hopefully, it will also help me to communicate more effectively to my team and to my future self. Good written communication is one of the most important skills for any Software Engineer to master.</p>
+  <!-- Post body -->
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="https://mrafsyam.github.io/">Home</a>
+  </nav>
+  <div class="content container">
+    <div class="posts">
+      {{ content }}
     </div>
-
-    <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="https://twitter.com/mrafsyam">Twitter</a>
-    </nav>
-
-    <p>&copy; 2022. All rights reserved.</p>
   </div>
-</div>
-   
-<!-- Post body -->
-<div class="content container">
-  <div class="posts">
-    {{ content }}
-  </div>
-</div>
-    
 </body>
 </html>
