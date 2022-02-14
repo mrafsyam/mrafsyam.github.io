@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Python script : SSID sniffer, De-auth attack and Packets capturing using Aircrack-ng and tshark 
+title: Python script SSID sniffer, De-auth attack and Packets capturing using Aircrack-ng and tshark 
 date: 2014-09-10 19:46:43 UTC
 updated: 2014-09-10 19:46:43 UTC
 comments: false
