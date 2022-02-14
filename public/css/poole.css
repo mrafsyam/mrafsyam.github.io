@@ -283,11 +283,10 @@ tbody tr:nth-child(odd) th {
  * Container
  *
  * Center the page content.
- * ori 38rem
  */
 
 .container {
-  max-width: 58rem;
+  max-width: 38rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
