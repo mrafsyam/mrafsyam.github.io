@@ -1,0 +1,47 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="https://mrafsyam.github.io/">Home
+      <span><small>I'm open for networking. Hit <a href="https://t.me/mrafsyam">me</a> up!</small></span> 
+    </nav>
+      
+{% assign currentYear = site.time | date: "%Y" %}
+{% assign currentMonth = site.time | date: "%B" %}
+{% for post in site.posts %}
+    
+    {% assign postYear = post.date | date: "%Y" %}
+    {% assign postMonth = post.date  | date: "%B" %}
+    
+    {% if forloop.first %}
+    <li><small> {{ postYear}}</small>
+        <ul>
+            <li><small> {{ postMonth }}</small>
+                <ul>
+    {% endif %}
+    
+    {% if (postYear == currentYear and postMonth == currentMonth) or forloop.first %}
+        <li><small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></small></li>
+    {% endif %}
+    
+    {% if postYear == currentYear and postMonth != currentMonth %}
+        </ul></li>
+        <li> <small>{{ postMonth }}</small>
+            <ul>
+                <li><small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></small></li>
+    {% endif %}
+    
+    {% if postYear != currentYear %}
+        </ul></li></ul></li>
+            <li><small> {{ postYear}}</small>
+                <ul>
+                    <li> <small>{{ postMonth }}</small>
+                        <ul>
+                            <li><small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></small></li>
+    {% endif %}
+    {% assign currentYear = postYear %}
+    {% assign currentMonth = postMonth %}
+{% endfor %}
+
+    <p>&copy; {{ site.time | date: '%Y' }}. All Rights Reserved.</p>
+  </div>
+</div>
