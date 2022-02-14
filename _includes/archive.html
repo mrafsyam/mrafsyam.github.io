@@ -1,10 +1,3 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="https://mrafsyam.github.io/">Home
-      <span><small>I'm open for networking. Hit <a href="https://t.me/mrafsyam">me</a> up!</small></span> 
-    </nav>
-      
 {% assign currentYear = site.time | date: "%Y" %}
 {% assign currentMonth = site.time | date: "%B" %}
 {% for post in site.posts %}
@@ -43,5 +36,3 @@
 {% endfor %}
 
     <p>&copy; {{ site.time | date: '%Y' }}. All Rights Reserved.</p>
-  </div>
-</div>
