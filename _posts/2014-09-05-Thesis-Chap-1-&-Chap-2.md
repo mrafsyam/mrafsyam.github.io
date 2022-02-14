@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Thesis : Chap 1 & Chap 2
+title: Thesis - Chap 1 & Chap 2
 date: 2014-09-05 11:21:48 UTC
 updated: 2014-09-05 11:21:48 UTC
 comments: false

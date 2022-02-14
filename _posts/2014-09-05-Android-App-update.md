@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Android App update:
+title: Android App update
 date: 2014-09-05 11:21:48 UTC
 updated: 2014-09-05 11:21:48 UTC
 comments: false
