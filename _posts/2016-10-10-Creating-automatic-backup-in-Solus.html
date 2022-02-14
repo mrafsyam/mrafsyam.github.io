@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Creating automatic backup in Solus
+date: 2016-10-10 08:51:36 UTC
+updated: 2016-10-10 08:51:36 UTC
+comments: false
+categories: 
+---
+
+This morning I accidentally (well, I was not aware that I was not in the correct folder) all my project files today. <br /><br />Lesson learned - recovery for (rm -rf *) is almost impossible. <br /><br />The good thing is that I worked on the project over the weekend, so some stuff are still fresh in my mind.  But first, I am going to create back up and automate it for every 2 hours because I am paranoid like that. I am going to leave the backup on my desktop.<br /><br />&nbsp;In Solus, cron is not installed by default and they use systemd/Timers (https://wiki.archlinux.org/index.php/Systemd/Timers) instead for replacement. <br /><br />Create a file named as backup-workspace.service in /etc/systemd/system<br /><br /><pre>cd&nbsp;/etc/systemd/system<br />sudo touch&nbsp;backup-workspace.service<br /></pre>Add in the following &nbsp;using your favorite text editor:  <br /><br /><pre># Systemd<br /># Service (/etc/systemd/system/backup-workspace.service)<br />[Unit]<br />Description=automatically backup workspace <br /><br />[Service]<br />ExecStart=tar -cvpzf /home/raf/Desktop/Workspace-backup.tar.gz /home/raf/Workspace <br /><br /># Timer (/etc/systemd/system/backup-workspace.timer)<br />[Unit]<br />Description=Runs backup-workspace service every hour<br /><br />[Timer]<br /># Time to wait after booting before we run first time<br />OnBootSec=1min<br /># Time between running each consecutive time<br />OnUnitActiveSec=1h<br />Unit=backup-workspace.service<br /><br />[Install]<br />WantedBy=multi-user.target<br /><br />I created an alias/shortcut key to do the backup manually too by editing my ~/.bashrc file.<br /><br /><pre>alias backup="tar -cvpzf /home/raf/Desktop/Workspace-backup.tar.gz /home/raf/Workspace"</pre><pre></pre></pre>

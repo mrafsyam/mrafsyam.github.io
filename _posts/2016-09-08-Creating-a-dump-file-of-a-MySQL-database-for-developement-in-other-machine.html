@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Creating a dump file of a MySQL database for developement in other machine
+date: 2016-09-08 11:24:04 UTC
+updated: 2016-09-08 11:24:04 UTC
+comments: false
+categories: 
+---
+
+Create the dump file using the following :<br /><br /><span style="background-color: #eff0f1; font-family: Courier New, Courier, monospace;">mysqldump --user=username --password --databases MY_DATABASE --single-transaction --add-drop-table --no-tablespaces --skip-disable-keys &gt; dump_sit.sql</span><br /><br />Add&nbsp;<span style="background-color: #eff0f1; font-family: Courier New, Courier, monospace;">-h remote-server-address</span>&nbsp;if you're creating from remote database server.<br /><br />Afterwards, edit the dump file and put these lines at the beginning:<br /><br /><span style="background-color: #eff0f1; font-family: Courier New, Courier, monospace;">SET AUTOCOMMIT = 0; SET FOREIGN_KEY_CHECKS=0; And put these lines at the end: SET FOREIGN_KEY_CHECKS = 1; COMMIT; SET AUTOCOMMIT = 1;</span><br /><span style="background-color: #eff0f1;"><br /></span>For example, using sed on Linux to insert at the beginning of the file:<br /><span style="background-color: #eff0f1; font-family: Courier New, Courier, monospace;"><span style="background-color: transparent;">sed -i '1s/^/SET AUTOCOMMIT = 0; SET FOREIGN_KEY_CHECKS=0;\n/' dump_sit.sql</span></span><br /><br />Appending at the end of the file :<br /><span style="background-color: #eff0f1;"><span style="font-family: Courier New, Courier, monospace;">echo "SET FOREIGN_KEY_CHECKS = 1; COMMIT; SET AUTOCOMMIT = 1;" &gt;&gt; dump_sit.sql</span></span><br /><div><span style="background-color: #eff0f1;"><br /></span></div>To understand what these options means, go to :<br /><a href="http://dev.mysql.com/doc/refman/5.7/en/mysqldump.html#option_mysqldump_compatible">http://dev.mysql.com/doc/refman/5.7/en/mysqldump.html#option_mysqldump_compatible</a><br /><br />
