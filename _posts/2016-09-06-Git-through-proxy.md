@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Git through proxy
+date: 2016-09-06 16:04:20 UTC
+updated: 2016-09-06 16:04:20 UTC
+comments: false
+categories: 
+---
+
+I have to go through proxy at work. Time from time, I took a break and work on my personal projects which are hosted on github and thus, git on my computer needs to be configured for it.<br /><br />On the terminal, run this :<br /><br /><pre style="background-color: #eff0f1; border: 0px; color: #111111; font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, monospace, sans-serif; font-size: 13px; margin-bottom: 1em; max-height: 600px; overflow: auto; padding: 5px; width: auto; word-wrap: normal;"><div style="color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; white-space: normal;"><br /><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">HTTP_PROXY=http://proxy.site.my:80</span></div><br /><div style="color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; white-space: normal;"><br /><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">git config --global http.proxy $HTTP_PROXY</span></div><br /></pre>Back at home, I need to set it back to having no proxy<br /><br /><pre style="background-color: #eff0f1; border: 0px; color: #111111; font-family: consolas, menlo, monaco, &quot;lucida console&quot;, &quot;liberation mono&quot;, &quot;dejavu sans mono&quot;, &quot;bitstream vera sans mono&quot;, &quot;courier new&quot;, monospace, sans-serif; font-size: 13px; margin-bottom: 1em; max-height: 600px; overflow: auto; padding: 5px; width: auto; word-wrap: normal;"><div style="color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; white-space: normal;"><br /><span style="font-family: &quot;courier new&quot;, courier, monospace;">git config --global --unset http.proxy</span></div><br /></pre>Yeah, tedious.

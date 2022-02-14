@@ -1,0 +1,10 @@
+---           
+layout: post
+title: Android App update:
+date: 2014-09-05 11:21:48 UTC
+updated: 2014-09-05 11:21:48 UTC
+comments: false
+categories: 
+---
+
+I have fixed the server scripts and simplify the Android App, enables it to successfully connect to the server and send some data. I tested on Ubuntu and Rpi Raspian, and it works fine on both.<br /><br />Thanks to Zul, &nbsp;I was also able to add on QR scan function which is now able to :<br /><br /><b><span style="color: #9fc5e8; font-size: large;">1. Scan QR code that point to a http URL ended with "png"&nbsp;</span></b><br /><span style="color: #9fc5e8; font-size: large;">&nbsp; </span><span style="color: #9fc5e8;">&nbsp; Other form of links are simply ignored by the App. Only the link that ended with "png" (hence, png image file) &nbsp;are actually downloaded to the phone.</span><br /><span style="font-size: large;"><span style="color: #9fc5e8;"><br /></span><span style="color: #9fc5e8;">2. <b>Download the png image file automatically to the gallery</b></span></span><br /><span style="color: #9fc5e8; font-size: large;">&nbsp; &nbsp; </span><span style="color: #9fc5e8;">The download process is done in the background (Android Asynctask). However, the actual image is also displayed on the App so that the user does not need to be prompted to the gallery to view the image.</span><br /><br />The png file extension is important as it is the format that the CMS uses (on webcam photo capture during new user registration). Hence, it will be the format that the Steganography Algorithm will be applied on. The difference between JPEG, GIF and PNG are discussed here : <b><a href="http://stackoverflow.com/questions/2336522/png-vs-gif-vs-jpeg-when-best-to-use?answertab=votes#tab-top">Link</a></b>.<br /><br />Here is the App APK file: <b><a href="https://www.facebook.com/download/630037383729565/Smart.apk">Link</a></b>
