@@ -18,7 +18,7 @@ author:
   url:            https://twitter.com/mrafsyam
 
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 500
 paginate_path: "page:num"
 
 # Custom vars
