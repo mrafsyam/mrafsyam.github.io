@@ -1,3 +1,12 @@
+---           
+layout: post
+title: Problem with posts imported from Blogspot
+date: 2022-02-15 21:57:29 UTC
+updated: 2022-02-15 21:57:29 UTC
+comments: false
+categories:
+---
+
 Sheshhhh! 
 
 So, some of the posts that I've imported from my old blogspot seems to be OK but mostly were NOT.
