@@ -26,59 +26,42 @@
       <span><small>I'm open for networking. Hit <a href="https://t.me/mrafsyam">me</a> up!</small></span> 
     </nav>
       
-      <ul class="postList archive">
-	{% for post in site.posts %}
-	
-		{% if post.next %}		
-				{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-				{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-				{% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
-				{% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}
-		{% endif %}
-		
-		{% if forloop.first %}				
-				<!-- year -->
-				<li><a href="/archives.html#{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a>				
-					<ul>
-						<!-- month -->
-						<li><a href="/archives.html#{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</a>							
-							<ul>			
-		{% else %}
-			<!-- all other posts -->								
-				{% if year != nyear %}	
-							</ul>
-						</li>						
-						<!-- /month -->	
-					</ul>
-				</li>
-				<!-- /year -->
-				<!-- year -->
-				<li><a href="/archives.html#{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a>				
-					<ul>
-						<!-- month -->
-						<li><a href="/archives.html#{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</a>							
-							<ul>		
-				{% elsif month != nmonth %}
-							</ul>
-						</li>						
-						<!-- /month -->	
-						<!-- month -->
-						<li><a href="/archives.html#{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</a>							
-							<ul>												
-				{% endif %}					
-	   {% endif %}	
-	   {% comment %}<li><a href="/{{ post.url }}">{{ post.title }}</a></li>	{% endcomment %}
-	   
-	   {% if forloop.last %}
-	  						 </ul>
-						</li>						
-						<!-- /month -->	
-					</ul>
-				</li>
-				<!-- /year -->		
-	   {% endif %}
-	{% endfor %}														
-	</ul>	
+{% assign currentYear = site.time | date: "%Y" %}
+{% assign currentMonth = site.time | date: "%B" %}
+{% for post in site.posts %}
+    
+    {% assign postYear = post.date | date: "%Y" %}
+    {% assign postMonth = post.date  | date: "%B" %}
+    
+    {% if forloop.first %}
+    <li> {{ postYear}}
+        <ul>
+            <li> {{ postMonth }}
+                <ul>
+    {% endif %}
+    
+    {% if (postYear == currentYear and postMonth == currentMonth) or forloop.first %}
+        <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endif %}
+    
+    {% if postYear == currentYear and postMonth != currentMonth %}
+        </ul></li>
+        <li> {{ postMonth }}
+            <ul>
+                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endif %}
+    
+    {% if postYear != currentYear %}
+        </ul></li></ul></li>
+            <li> {{ postYear}}
+                <ul>
+                    <li> {{ postMonth }}
+                        <ul>
+                            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% assign currentYear = postYear %}
+    {% assign currentMonth = postMonth %}
+{% endfor %}
 
     <p>&copy; {{ site.time | date: '%Y' }}. All Rights Reserved.</p>
   </div>
