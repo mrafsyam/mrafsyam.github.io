@@ -4,23 +4,24 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
-title:            Raf
-tagline:          'Pen down of the day'
-description:      'Here I write as often as possible about various topics, usually around software developement.A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              https://mrafsyam.github.io/
+title:            Raf blog
+tagline:          'Noob Software Engineer trying to pick up some slacks'
+description:      'Here I write as often as possible about various topics, usually around Software Engineering. Writing hopefully helps me to think and solve problems better, as I put thoughts into words. Hopefully, it will also help me to communicate more effectively to my team and to my future self. Good written communication is one of the most important skills for any Software Engineer to master.'
+url:              http://mrafsyam.github.io
 baseurl:          /
 
 author:
-  name:           'Rafsyam '
+  name:           'Raf'
   url:            https://twitter.com/mrafsyam
 
-paginate:         20
+gems: [jekyll-paginate]
+paginate: 30
+paginate_path: "page:num"
 
 # Custom vars
-version:          2.0.0
+version:          1.0
 
 github:
-  repo:           https://github.com/mrafsyam
+  repo: https://github.com/mrafsyam/mrafsyam.github.io.git
