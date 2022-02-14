@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: MySQL : Conditional If-else when selection returns empty result set
+title: MySQL Conditional If-else when selection returns empty result set
 date: 2017-09-05 15:12:35 UTC
 updated: 2017-09-05 15:12:35 UTC
 comments: false

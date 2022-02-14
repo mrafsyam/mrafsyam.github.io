@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: SSH : Remote host identification has changed
+title: SSH Remote host identification has changed
 date: 2017-09-30 13:41:01 UTC
 updated: 2017-09-30 13:41:01 UTC
 comments: false

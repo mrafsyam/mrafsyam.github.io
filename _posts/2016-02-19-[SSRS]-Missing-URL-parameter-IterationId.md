@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: [SSRS] Missing URL parameter: IterationId
+title: SSRS Missing URL parameter - IterationId
 date: 2016-02-19 07:06:31 UTC
 updated: 2016-02-19 07:06:31 UTC
 comments: false

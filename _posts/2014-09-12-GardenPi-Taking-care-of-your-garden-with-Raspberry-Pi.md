@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: GardenPi: Taking care of your garden with Raspberry Pi
+title: GardenPi Taking care of your garden with Raspberry Pi
 date: 2014-09-12 18:55:14 UTC
 updated: 2014-09-12 18:55:14 UTC
 comments: false

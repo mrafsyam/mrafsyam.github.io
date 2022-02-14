@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: vim : arrow keys adds characters in editor
+title: vim arrow keys adds characters in editor
 date: 2020-04-08 13:07:09 UTC
 updated: 2020-04-08 13:07:09 UTC
 comments: false

@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: [Android] Fast ADB installer
+title: Android Fast ADB installer
 date: 2016-02-22 06:45:06 UTC
 updated: 2016-02-22 06:45:06 UTC
 comments: false

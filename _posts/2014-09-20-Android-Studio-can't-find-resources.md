@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Android Studio : can't find resources
+title: Android Studio can't find resources
 date: 2014-09-20 18:39:53 UTC
 updated: 2014-09-20 18:39:53 UTC
 comments: false

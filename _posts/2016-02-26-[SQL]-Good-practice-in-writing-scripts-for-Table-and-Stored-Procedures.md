@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: [SQL] Good practice in writing scripts for Table and Stored Procedures
+title: SQL Good practice in writing scripts for Table and Stored Procedures
 date: 2016-02-26 11:44:23 UTC
 updated: 2016-02-26 11:44:23 UTC
 comments: false

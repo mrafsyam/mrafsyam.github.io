@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: [SSRS] Clear Report Data Cache easily
+title: SSRS Clear Report Data Cache easily
 date: 2016-02-05 08:17:47 UTC
 updated: 2016-02-05 08:17:47 UTC
 comments: false

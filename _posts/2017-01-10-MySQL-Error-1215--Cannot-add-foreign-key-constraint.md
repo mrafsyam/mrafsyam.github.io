@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: MySQL Error 1215: Cannot add foreign key constraint
+title: MySQL Error 1215 Cannot add foreign key constraint
 date: 2017-01-10 04:42:18 UTC
 updated: 2017-01-10 04:42:18 UTC
 comments: false

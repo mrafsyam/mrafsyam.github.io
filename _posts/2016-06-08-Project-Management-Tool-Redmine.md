@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Project Management Tool : Redmine
+title: Project Management Tool Redmine
 date: 2016-06-08 03:44:18 UTC
 updated: 2016-06-08 03:44:18 UTC
 comments: false
