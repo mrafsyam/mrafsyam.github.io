@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Basketball defense 3-2 : my take
+title: Basketball defense 3-2 my take
 date: 2016-09-06 15:16:24 UTC
 updated: 2016-09-06 15:16:24 UTC
 comments: false

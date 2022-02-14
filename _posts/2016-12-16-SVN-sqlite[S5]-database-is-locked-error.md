@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: SVN : sqlite[S5] database is locked error
+title: SVN sqlite database is locked error
 date: 2016-12-16 02:53:36 UTC
 updated: 2016-12-16 02:53:36 UTC
 comments: false
