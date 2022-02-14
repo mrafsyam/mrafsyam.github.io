@@ -1,6 +1,6 @@
 ---           
 layout: post
-title: Arduino : Serial communication with interrupt 
+title: Arduino Serial communication with interrupt 
 date: 2014-09-10 19:47:15 UTC
 updated: 2014-09-10 19:47:15 UTC
 comments: false
