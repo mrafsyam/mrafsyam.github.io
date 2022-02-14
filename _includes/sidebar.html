@@ -34,30 +34,30 @@
     {% assign postMonth = post.date  | date: "%B" %}
     
     {% if forloop.first %}
-    <li> {{ postYear}}
+    <li><small> {{ postYear}}</small>
         <ul>
-            <li> {{ postMonth }}
+            <li><small> {{ postMonth }}</small>
                 <ul>
     {% endif %}
     
     {% if (postYear == currentYear and postMonth == currentMonth) or forloop.first %}
-        <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+        <li><small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></small></li>
     {% endif %}
     
     {% if postYear == currentYear and postMonth != currentMonth %}
         </ul></li>
-        <li> {{ postMonth }}
+        <li> <small>{{ postMonth }}</small>
             <ul>
-                <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                <li><small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></small></li>
     {% endif %}
     
     {% if postYear != currentYear %}
         </ul></li></ul></li>
-            <li> {{ postYear}}
+            <li><small> {{ postYear}}</small>
                 <ul>
-                    <li> {{ postMonth }}
+                    <li> <small>{{ postMonth }}</small>
                         <ul>
-                            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                            <li><small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></small></li>
     {% endif %}
     {% assign currentYear = postYear %}
     {% assign currentMonth = postMonth %}
