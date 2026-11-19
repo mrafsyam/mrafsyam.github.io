@@ -1,17 +1,35 @@
-# raf_site
+# Raf's personal website (Flutter web)
 
-A new Flutter project.
+A single-page personal site built with Flutter web.
 
-## Getting Started
+## Edit the content
 
-This project is a starting point for a Flutter application.
+Everything shown on the site lives in **`lib/data/profile.dart`**: name, intro,
+about, skills, experience, projects and contact links. Values in `[brackets]`
+or marked `TODO(raf)` are placeholders for details that weren't public. Fill
+them in or delete them.
 
-A few resources to get you started if this is your first Flutter project:
+Colours are the constants at the top of `lib/main.dart` (`_accent` is the
+orange).
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Run locally
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+cd site
+flutter pub get
+flutter run -d chrome
+```
+
+## Build
+
+```bash
+flutter build web --release --no-web-resources-cdn
+# output: site/build/web
+```
+
+If the site is served from a sub-path (for example
+`https://mrafsyam.github.io/site/`), add `--base-href /site/`.
+
+The `Build Flutter site` GitHub Actions workflow builds the site on every push
+and pull request that touches `site/`, and uploads `build/web` as a downloadable
+artifact.
