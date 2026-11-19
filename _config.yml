@@ -25,3 +25,6 @@ version:          1.0
 
 github:
   repo: https://github.com/mrafsyam/mrafsyam.github.io.git
+
+# The Flutter site source is not part of the Jekyll blog
+exclude: [site]
