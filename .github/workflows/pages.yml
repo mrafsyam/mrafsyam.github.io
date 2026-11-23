@@ -1,0 +1,70 @@
+name: Build and deploy site
+
+# Publishes the Flutter site at https://mrafsyam.github.io/ and the Jekyll
+# blog at https://mrafsyam.github.io/blog/.
+# Requires Settings > Pages > Build and deployment > Source = "GitHub Actions".
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build blog (Jekyll)
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_blog
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Build Flutter site
+        working-directory: site
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter build web --release --no-web-resources-cdn --base-href /
+
+      - name: Assemble Pages output
+        run: |
+          mkdir -p _out/blog
+          cp -r site/build/web/. _out/
+          sudo cp -r _blog/. _out/blog/
+          sudo chown -R "$(id -u):$(id -g)" _out
+          cp .github/pages/404.html _out/404.html
+          touch _out/.nojekyll
+          test -f _out/index.html && test -f _out/blog/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _out
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

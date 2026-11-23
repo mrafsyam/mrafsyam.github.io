@@ -131,10 +131,10 @@ const profile = Profile(
       description:
           '[Three Flutter apps published on Google Play and the App Store.]',
       tags: ['Flutter', 'iOS', 'Android'],
-      url: 'https://kemaman.org',
+      url: 'https://github.com/mrafsyam',
     ),
   ],
-  blogUrl: 'https://mrafsyam.github.io',
+  blogUrl: 'https://mrafsyam.github.io/blog/',
   blogBlurb:
       '160+ posts since 2017 on Linux, Java, Git, databases and getting into '
       'software development.',
@@ -143,7 +143,7 @@ const profile = Profile(
     Link('X / Twitter', 'https://twitter.com/mrafsyam', LinkKind.twitter),
     Link('Telegram', 'https://t.me/everybodycheeze', LinkKind.telegram),
     Link('Instagram', 'https://www.instagram.com/zeroquitgenes', LinkKind.instagram),
-    Link('Blog', 'https://mrafsyam.github.io', LinkKind.blog),
+    Link('Blog', 'https://mrafsyam.github.io/blog/', LinkKind.blog),
     // TODO(raf): add LinkedIn and/or email if you want them public, e.g.
     // Link('LinkedIn', 'https://www.linkedin.com/in/[you]', LinkKind.linkedin),
     // Link('Email', 'mailto:[you@example.com]', LinkKind.email),

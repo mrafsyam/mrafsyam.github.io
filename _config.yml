@@ -9,8 +9,8 @@ permalink:        pretty
 title:            Raf
 tagline:          'Aspiring Software Engineer trying to pick up some slacks'
 description:      'I scribble about this and that, usually Software Engineering. Aspiring to be a wordsmith (hope I got that right), writing helps me think, solve problems, and communicate better.'
-url:              https://www.instagram.com/zeroquitgenes/
-baseurl:          /
+url:              https://mrafsyam.github.io
+baseurl:          /blog
 
 author:
   name:           'Raf'

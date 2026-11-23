@@ -25,7 +25,7 @@ My work with Kendra Solutions has revolved around Payment Gateway, Payment Integ
 
 ## What else do I do?
 
-I recently started to pick up Flutter Mobile App development and have since published 3 Apps both on Google Play and Apple Store. See my work at my personal site [www.kemaman.org](http://kemaman.org)
+I recently started to pick up Flutter Mobile App development and have since published 3 Apps both on Google Play and Apple Store. See my work at [mrafsyam.github.io](https://mrafsyam.github.io/)
 
 On the side, I write a blog and teach people to code. I also regularly play organized basketball and go camping.
 

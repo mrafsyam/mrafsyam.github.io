@@ -27,9 +27,13 @@ flutter build web --release --no-web-resources-cdn
 # output: site/build/web
 ```
 
-If the site is served from a sub-path (for example
-`https://mrafsyam.github.io/site/`), add `--base-href /site/`.
+## Deploy
 
-The `Build Flutter site` GitHub Actions workflow builds the site on every push
-and pull request that touches `site/`, and uploads `build/web` as a downloadable
-artifact.
+`.github/workflows/pages.yml` builds this Flutter site and the Jekyll blog
+together on every push to `master` and publishes them to GitHub Pages:
+
+- Flutter site: https://mrafsyam.github.io/
+- Blog: https://mrafsyam.github.io/blog/
+
+Old blog URLs (for example `/2017/01/08/...`) are sent to `/blog/...` by the
+root `404.html` that the workflow writes.
