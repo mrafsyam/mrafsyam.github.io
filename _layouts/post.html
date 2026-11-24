@@ -20,7 +20,7 @@
     {% for post in site.related_posts limit:10 %}
       <li>
         <small>
-          <a href="{{ post.url }}">
+          <a href="/blog{{ post.url }}">
             {{ post.title }}
             <small>{{ post.date | date_to_string }}</small>
           </a>

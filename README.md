@@ -1,6 +1,6 @@
 # Raf Blog
 
-https://mrafsyam.github.io
+https://mrafsyam.github.io (Flutter site) and https://mrafsyam.github.io/blog/ (this blog)
 
 This site is the platform where I write as often as possible about various topics, usually around Software Developement.
 
